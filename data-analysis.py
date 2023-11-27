@@ -1,11 +1,16 @@
 import math
 import os
 from dotenv import load_dotenv
+import random
 
 load_dotenv()
 
-test_data = os.environ.get("test_data")
-data = test_data
+length = os.environ.get("length")
+
+data = []
+
+for i in range(int(length)):
+  data.append(random.randint(0,100))
 mean = None
 total = 0
 total2 = 0
