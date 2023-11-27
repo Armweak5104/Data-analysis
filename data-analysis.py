@@ -1,5 +1,11 @@
 import math
-data = [9,10,8,6,8,5,5,3,9,2,8,4,10,9,2,5,7,2,4,6,7,4,2,8,8,5]
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+test_data = os.environ.get("test_data")
+data = test_data
 mean = None
 total = 0
 total2 = 0
